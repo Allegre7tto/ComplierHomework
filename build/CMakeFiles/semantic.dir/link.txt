@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsemantic.a CMakeFiles/semantic.dir/src/semantic.cpp.o
-/usr/bin/ranlib libsemantic.a

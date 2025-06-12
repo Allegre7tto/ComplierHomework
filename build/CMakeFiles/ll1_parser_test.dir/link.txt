@@ -1,1 +1,0 @@
-/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/ll1_parser_test.dir/tests/ll1_parser_test.cpp.o -o bin/ll1_parser_test  libparser.a liblexer.a
