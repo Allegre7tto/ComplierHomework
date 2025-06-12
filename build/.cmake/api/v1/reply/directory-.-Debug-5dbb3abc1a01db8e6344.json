@@ -1,0 +1,174 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 178,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 186,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 191,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 196,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"liblexer.a"
+			],
+			"targetId" : "lexer::@6890427a1f51a3e7e1df",
+			"targetIndex" : 29,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libparser.a"
+			],
+			"targetId" : "parser::@6890427a1f51a3e7e1df",
+			"targetIndex" : 32,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libsemantic.a"
+			],
+			"targetId" : "semantic::@6890427a1f51a3e7e1df",
+			"targetIndex" : 33,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/compiler"
+			],
+			"targetId" : "compiler::@6890427a1f51a3e7e1df",
+			"targetIndex" : 28,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/lexer_test"
+			],
+			"targetId" : "lexer_test::@6890427a1f51a3e7e1df",
+			"targetIndex" : 30,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/ll1_parser_test"
+			],
+			"targetId" : "ll1_parser_test::@6890427a1f51a3e7e1df",
+			"targetIndex" : 31,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/semantic_test"
+			],
+			"targetId" : "semantic_test::@6890427a1f51a3e7e1df",
+			"targetIndex" : 34,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				{
+					"from" : "include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Compiler",
+			"exportName" : "CompilerTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "lexer::@6890427a1f51a3e7e1df",
+					"index" : 29
+				},
+				{
+					"id" : "parser::@6890427a1f51a3e7e1df",
+					"index" : 32
+				},
+				{
+					"id" : "semantic::@6890427a1f51a3e7e1df",
+					"index" : 33
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/c6f27fb64e7f87002132a96b6f33edd0/CompilerTargets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

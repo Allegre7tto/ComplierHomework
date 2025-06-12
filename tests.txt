@@ -1,0 +1,24 @@
+# 词法分析器测试
+echo "while (i >= j) { i--; if (x == 5) { int count = 10; } else { count++; } }" | ./bin/lexer_test
+echo "a=b+c*d;" | ./bin/lexer_test
+
+# 语法分析器测试
+./bin/ll1_parser_test "x=5*2/3;"
+./bin/ll1_parser_test "result=1+2*3;"
+./bin/ll1_parser_test "if(x<y) a=1; else b=2;"
+./bin/ll1_parser_test "while(i<=100) i=i+1;"
+./bin/ll1_parser_test "matrix[i,j]=value;"
+
+# 语义分析器测试
+./bin/semantic_test "a=6/b+5*c-d;"
+./bin/semantic_test "x=A[i];"
+./bin/semantic_test "x=A[i,j];"
+./bin/semantic_test "x[k]=y[i,j]+a1*a2;"
+./bin/semantic_test "if(a<b) x=1; else x=0;"
+./bin/semantic_test "while(a<b) x=x+1;"
+./bin/semantic_test "while(a<b) { if(c) x=y+z; else x=y-z; a=y; }"
+
+# 管道输入测试
+echo "x=5*2/3;" | ./bin/ll1_parser_test
+echo "a=6/b+5*c-d;" | ./bin/semantic_test
+echo "while(i<10) i=i+1;" | ./bin/semantic_test

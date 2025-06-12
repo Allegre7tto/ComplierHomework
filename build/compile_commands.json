@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/Users/allegre7tto/Coding/Compilers/build",
+  "command": "/usr/bin/clang++  -I/Users/allegre7tto/Coding/Compilers/include -g -std=c++11 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/lexer.dir/src/lexer.cpp.o -c /Users/allegre7tto/Coding/Compilers/src/lexer.cpp",
+  "file": "/Users/allegre7tto/Coding/Compilers/src/lexer.cpp",
+  "output": "CMakeFiles/lexer.dir/src/lexer.cpp.o"
+},
+{
+  "directory": "/Users/allegre7tto/Coding/Compilers/build",
+  "command": "/usr/bin/clang++  -I/Users/allegre7tto/Coding/Compilers/include -g -std=c++11 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/parser.dir/src/parser.cpp.o -c /Users/allegre7tto/Coding/Compilers/src/parser.cpp",
+  "file": "/Users/allegre7tto/Coding/Compilers/src/parser.cpp",
+  "output": "CMakeFiles/parser.dir/src/parser.cpp.o"
+},
+{
+  "directory": "/Users/allegre7tto/Coding/Compilers/build",
+  "command": "/usr/bin/clang++  -I/Users/allegre7tto/Coding/Compilers/include -g -std=c++11 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/semantic.dir/src/semantic.cpp.o -c /Users/allegre7tto/Coding/Compilers/src/semantic.cpp",
+  "file": "/Users/allegre7tto/Coding/Compilers/src/semantic.cpp",
+  "output": "CMakeFiles/semantic.dir/src/semantic.cpp.o"
+},
+{
+  "directory": "/Users/allegre7tto/Coding/Compilers/build",
+  "command": "/usr/bin/clang++  -I/Users/allegre7tto/Coding/Compilers/include -g -std=c++11 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/lexer_test.dir/tests/lexer_test.cpp.o -c /Users/allegre7tto/Coding/Compilers/tests/lexer_test.cpp",
+  "file": "/Users/allegre7tto/Coding/Compilers/tests/lexer_test.cpp",
+  "output": "CMakeFiles/lexer_test.dir/tests/lexer_test.cpp.o"
+},
+{
+  "directory": "/Users/allegre7tto/Coding/Compilers/build",
+  "command": "/usr/bin/clang++  -I/Users/allegre7tto/Coding/Compilers/include -g -std=c++11 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/ll1_parser_test.dir/tests/ll1_parser_test.cpp.o -c /Users/allegre7tto/Coding/Compilers/tests/ll1_parser_test.cpp",
+  "file": "/Users/allegre7tto/Coding/Compilers/tests/ll1_parser_test.cpp",
+  "output": "CMakeFiles/ll1_parser_test.dir/tests/ll1_parser_test.cpp.o"
+},
+{
+  "directory": "/Users/allegre7tto/Coding/Compilers/build",
+  "command": "/usr/bin/clang++  -I/Users/allegre7tto/Coding/Compilers/include -g -std=c++11 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/semantic_test.dir/tests/semantic_test.cpp.o -c /Users/allegre7tto/Coding/Compilers/tests/semantic_test.cpp",
+  "file": "/Users/allegre7tto/Coding/Compilers/tests/semantic_test.cpp",
+  "output": "CMakeFiles/semantic_test.dir/tests/semantic_test.cpp.o"
+},
+{
+  "directory": "/Users/allegre7tto/Coding/Compilers/build",
+  "command": "/usr/bin/clang++  -I/Users/allegre7tto/Coding/Compilers/include -g -std=c++11 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/compiler.dir/src/main.cpp.o -c /Users/allegre7tto/Coding/Compilers/src/main.cpp",
+  "file": "/Users/allegre7tto/Coding/Compilers/src/main.cpp",
+  "output": "CMakeFiles/compiler.dir/src/main.cpp.o"
+}
+]
