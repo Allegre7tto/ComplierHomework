@@ -1,0 +1,18 @@
+[package]
+name = "compiler-rust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "compiler_rust"
+path = "src/lib.rs"
+
+[[bin]]
+name = "compiler-rust"
+path = "src/main.rs"
+
+[[bin]]
+name = "lexer_test"
+path = "tests/lexer_test.rs"
+
+[dependencies]

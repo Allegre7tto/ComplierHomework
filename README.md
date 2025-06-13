@@ -1,54 +1,64 @@
-# 编译器实验
+# Rust 词法分析器
 
-词法分析器、语法分析器和语义分析器实现。
+一个用 Rust 实现的 C 语言词法分析器，支持完整的词法分析功能。
 
 ## 项目结构
 
 ```
-.
-├── CMakeLists.txt          # CMake构建配置
-├── README.md               # 项目说明
-├── tests.txt               # 测试脚本
-├── include/compliers/      # 头文件
-│   ├── lexer.h            # 词法分析器
-│   ├── parser.h           # 语法分析器
-│   └── semantic.h         # 语义分析器
-├── src/                   # 源文件
-│   ├── lexer.cpp          
-│   ├── parser.cpp         
-│   ├── semantic.cpp       
-│   └── main.cpp           
-├── tests/                 # 测试程序
-│   ├── lexer_test.cpp     
-│   ├── ll1_parser_test.cpp 
-│   └── semantic_test.cpp  
-└── build/                 # 构建目录
+compiler-rust/
+├── src/
+│   ├── main.rs          # 主程序入口，包含测试代码
+│   ├── lexer.rs         # 词法分析器核心实现
+│   └── lib.rs           # 库文件
+├── tests/
+│   └── lexer_test.rs    # 命令行测试工具
+├── Cargo.toml           # 项目配置文件
+├── Cargo.lock           # 依赖锁定文件
+└── README.md            # 项目说明文档
 ```
 
-## 编译
+## 功能特性
 
+- ✅ **关键字识别**: `int`, `float`, `char`, `void`, `if`, `else`, `while`, `for`, `return` 等
+- ✅ **标识符和常量**: 变量名、整数、浮点数（支持科学计数法）
+- ✅ **字符串字面量**: 支持转义字符处理
+- ✅ **操作符**: 算术、比较、逻辑、赋值操作符
+- ✅ **分隔符**: 括号、分号、逗号等
+- ✅ **注释处理**: 单行注释 (`//`, `#`) 和多行注释 (`/* */`)
+- ✅ **错误处理**: 详细的错误信息和位置定位
+
+## 编译指令
+
+### 环境要求
+- Rust 1.70+ 
+- Cargo 包管理器
+
+### 编译项目
 ```bash
-mkdir build && cd build
-cmake ..
-make
+# 检查代码
+cargo check
+
+# 编译项目
+cargo build
+
+# 编译发布版本
+cargo build --release
 ```
 
-## 运行
+### 运行程序
 
-### 词法分析器
+#### 1. 命令行词法分析
 ```bash
-./bin/lexer_test                    # 交互式
-echo "a=b+c;" | ./bin/lexer_test    # 管道输入
+# 基本用法
+cargo run --bin lexer_test "int x = 42;"
+
+# 复杂示例
+cargo run --bin lexer_test "int main() { float x = 3.14e-2; return 0; }"
+
+# 包含注释的代码
+cargo run --bin lexer_test "int x = 10; /* 这是注释 */ x++;"
 ```
 
-### 语法分析器
-```bash
-./bin/ll1_parser_test "x=5*2/3;"    # 命令行
-./bin/ll1_parser_test               # 交互式
-```
 
-### 语义分析器
-```bash
-./bin/semantic_test "a=b+c;"        # 命令行
-./bin/semantic_test                 # 交互式
-```
+
+
